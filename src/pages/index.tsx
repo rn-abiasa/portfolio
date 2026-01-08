@@ -3,6 +3,7 @@ import { GraduationCap } from "lucide-react";
 import Navbar from "../components/customs/navbar";
 import Section from "../layouts/section";
 import ItemCard from "../components/customs/item/card";
+import ProjectCard from "../components/customs/project/card";
 import Footer from "../layouts/footer";
 
 const IndexPage = () => {
@@ -25,7 +26,7 @@ const IndexPage = () => {
             <p className="text-lg font-medium mt-5">
               A Website developer based in Bandung, Indonesia.
             </p>
-            <p className="text-xs font-medium mt-5 text-muted-foreground">
+            <p className="text-sm font-medium mt-5 text-muted-foreground">
               A Website developer based in Bandung, Indonesia.
             </p>
             <div className="flex gap-5 mt-12">
@@ -61,22 +62,37 @@ const IndexPage = () => {
           />
         </div>
       </Section>
-      <Section className="bg-card/10 mt-5" title="My Experience">
+      <Section className="bg-card/10 mt-5" title="Rewards & Sertificates">
         <div className="flex flex-col gap-5 mt-4">
           <ItemCard
             icon={<GraduationCap />}
             title="Frontend Dev at Gamelab Indonesia"
             date="Agustus 2025 - November 2025"
           />
-          <ItemCard
-            icon={<GraduationCap />}
-            title="Student at SMK Negeri 1 Cipeundeuy"
-            date="Current"
+        </div>
+      </Section>
+      <Section className="mt-5" title="My Projects">
+        <div className="flex flex-col gap-5 mt-5">
+          <ProjectCard
+            image="/landingpage.png"
+            title="Llama Network Landing Page"
+            description="Landing page created with Astro JS."
+            previewLink="#"
+            githubLink="#"
           />
-          <ItemCard
-            icon={<GraduationCap />}
-            title="Student at MTS Negeri 4 KBB"
-            date="Juli 2020 - Juli 2023"
+          <ProjectCard
+            image="/landingpage.png"
+            title="Llama Network Landing Page"
+            description="Landing page created with Astro JS."
+            previewLink="#"
+            githubLink="#"
+          />
+          <ProjectCard
+            image="/landingpage.png"
+            title="Llama Network Landing Page"
+            description="Landing page created with Astro JS."
+            previewLink="#"
+            githubLink="#"
           />
         </div>
       </Section>

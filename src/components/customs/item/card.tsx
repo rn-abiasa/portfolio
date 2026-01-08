@@ -10,7 +10,7 @@ const ItemCard = ({ icon, title, date }: Props) => {
   return (
     <>
       <div className="border-b border-muted-foreground/20 py-5 flex items-center gap-5">
-        <div className="bg-card h-12 w-12 flex justify-center items-center rounded-lg">
+        <div className="bg-input h-12 w-12 flex justify-center items-center rounded-lg">
           {icon}
         </div>
         <div>
