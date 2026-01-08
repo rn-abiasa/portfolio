@@ -5,7 +5,6 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "../ui/dropdown-menu";
-import { NavigationMenu } from "../ui/navigation-menu";
 import { Menu } from "lucide-react";
 import { Github } from "lucide-react";
 
