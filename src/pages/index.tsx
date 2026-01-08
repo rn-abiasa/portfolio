@@ -39,7 +39,7 @@ const IndexPage = () => {
           </div>
         </div>
       </main>
-      <div className="bg-secondary">
+      <div className="bg-secondary/50">
         <div className="mt-16 md:flex md:justify-between">
           <Section className="bg-card/10 sm:px-16" title="My Experience">
             <div className="flex flex-col gap-5 mt-4">
@@ -74,7 +74,7 @@ const IndexPage = () => {
           </Section>
         </div>
         <Section className="mt-16 sm:px-16" title="My Projects">
-          <div className="grid grid-cols-1 gap-5 mt-7 mb-16 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 mt-7 sm:grid-cols-2 md:grid-cols-3">
             <ProjectCard
               image="/landingpage.png"
               title="Llama Network Landing Page"
