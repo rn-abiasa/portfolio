@@ -30,7 +30,7 @@ const IndexPage = () => {
               A Website developer based in Bandung, Indonesia.
             </p>
             <div className="flex gap-5 mt-12">
-              <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold">
+              <Button className="bg-green-700 hover:bg-green-800 text-white font-semibold">
                 Talk with me
               </Button>
               <Button
@@ -78,20 +78,6 @@ const IndexPage = () => {
       </div>
       <Section className="mt-16 mb-16 sm:px-16" title="My Projects">
         <div className="grid grid-cols-1 gap-5 mt-7 sm:grid-cols-2 md:grid-cols-3">
-          <ProjectCard
-            image="/landingpage.png"
-            title="Llama Network Landing Page"
-            description="Landing page created with Astro JS."
-            previewLink="#"
-            githubLink="#"
-          />
-          <ProjectCard
-            image="/landingpage.png"
-            title="Llama Network Landing Page"
-            description="Landing page created with Astro JS."
-            previewLink="#"
-            githubLink="#"
-          />
           <ProjectCard
             image="/landingpage.png"
             title="Llama Network Landing Page"

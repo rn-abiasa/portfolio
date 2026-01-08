@@ -20,7 +20,7 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <>
-      <Card className="py-3">
+      <Card className="bg-input/20 py-3">
         <CardContent className="px-3">
           <img src={image} alt={title} className="rounded-lg" />
           <div className="mt-3">
@@ -30,7 +30,7 @@ const ProjectCard = ({
         </CardContent>
         <CardFooter className="flex gap-3 px-3">
           <Button
-            className="bg-green-600 hover:bg-green-700 text-white font-semibold"
+            className="bg-green-700 hover:bg-green-800 text-white font-semibold"
             asChild
           >
             <a href={previewLink} target="_blank" rel="noreferrer">
