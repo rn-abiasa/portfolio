@@ -29,10 +29,19 @@ const ProjectCard = ({
           </div>
         </CardContent>
         <CardFooter className="flex gap-3 px-3">
-          <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold">
-            Preview
+          <Button
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold"
+            asChild
+          >
+            <a href={previewLink} target="_blank" rel="noreferrer">
+              Preview
+            </a>
           </Button>
-          <Button variant="outline">Github</Button>
+          <Button variant="outline" asChild>
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              Code
+            </a>
+          </Button>
         </CardFooter>
       </Card>
     </>
