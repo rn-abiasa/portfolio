@@ -1,7 +1,9 @@
 //const
 
-import { Card, CardContent, CardFooter } from "../../ui/card";
+import { Card, CardContent } from "../../ui/card";
 import { Button } from "../../ui/button";
+import { Badge } from "../../ui/badge";
+import { MoveUpRight } from "lucide-react";
 
 interface Props {
   image: string;
@@ -22,27 +24,25 @@ const ProjectCard = ({
     <>
       <Card className="bg-input/20 py-3">
         <CardContent className="px-3">
-          <img src={image} alt={title} className="rounded-lg" />
-          <div className="mt-3">
-            <h5 className="text-base font-semibold">{title}</h5>
+          <div className="flex justify-between items-center">
+            <Badge variant="default" className="py-2 px-3">
+              Web
+            </Badge>
+            <div className="flex items-center gap-2">
+              <Badge variant="outline" className="py-2 px-3">
+                2026
+              </Badge>
+              <Button variant="outline" size="icon" className="rounded-full">
+                <MoveUpRight />
+              </Button>
+            </div>
+          </div>
+          <div className="mt-5">
+            <h5 className="text-lg font-semibold">{title}</h5>
             <p className="text-sm text-muted-foreground mt-1">{description}</p>
           </div>
+          <img src={image} alt={title} className="rounded-lg mt-5" />
         </CardContent>
-        <CardFooter className="flex gap-3 px-3">
-          <Button
-            className="bg-green-700 hover:bg-green-800 text-white font-semibold"
-            asChild
-          >
-            <a href={previewLink} target="_blank" rel="noreferrer">
-              Preview
-            </a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href={githubLink} target="_blank" rel="noreferrer">
-              Code
-            </a>
-          </Button>
-        </CardFooter>
       </Card>
     </>
   );

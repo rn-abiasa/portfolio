@@ -1,4 +1,5 @@
 import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import { GraduationCap } from "lucide-react";
 import Navbar from "../components/customs/navbar";
 import Section from "../layouts/section";
@@ -11,80 +12,70 @@ const IndexPage = () => {
     <>
       <Navbar />
       <main className="p-5 py-10 sm:px-16">
-        <div className="md:flex md:justify-between md:items-center">
-          <div>
-            <img src="/profile.png" alt="" className="h-14 w-14 rounded-full" />
-            <h1 className="text-3xl font-semibold mt-5">
-              Hi there! I'm Rehan Abhiassa
+        <div>
+          <Badge variant="outline">Fullstack web developer</Badge>
+          <div className="mt-5">
+            <h1 className="text-3xl font-semibold">
+              Hi there, I'm Rehan Abhiassa
             </h1>
-          </div>
-          <div>
-            <p className="text-lg font-medium mt-5">
-              A Website developer based in Bandung, Indonesia.
+            <p className="text-lg mt-5">
+              I'm a web developer based in Bandung, Indonesia.
             </p>
-            <p className="text-sm font-medium mt-5 text-muted-foreground">
-              A Website developer based in Bandung, Indonesia.
+            <p className="text-sm mt-5">
+              I'm a web developer based in Bandung, Indonesia.
             </p>
-            <div className="flex gap-5 mt-12">
-              <Button className="bg-green-700 hover:bg-green-800 text-white font-semibold">
-                Talk with me
+            <div className="flex gap-5 mt-8">
+              <Button className="font-semibold rounded-full" asChild>
+                <a href="">Talk with me</a>
               </Button>
               <Button
                 variant="outline"
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold"
+                className="font-semibold rounded-full"
+                asChild
               >
-                See my projects
+                <a href="">Talk with me</a>
               </Button>
             </div>
           </div>
+          <img src="/Abiasa-profile.png" alt="" className="rounded-2xl mt-12" />
         </div>
       </main>
-      <div className="bg-secondary/50">
-        <div className="mt-16 md:flex md:justify-between">
-          <Section className="bg-card/10 sm:px-16" title="My Experience">
-            <div className="flex flex-col gap-5 mt-4">
-              <ItemCard
-                icon={<GraduationCap />}
-                title="Frontend Dev at Gamelab Indonesia"
-                date="Agustus 2025 - November 2025"
-              />
-              <ItemCard
-                icon={<GraduationCap />}
-                title="Student at SMK Negeri 1 Cipeundeuy"
-                date="Current"
-              />
-              <ItemCard
-                icon={<GraduationCap />}
-                title="Student at MTS Negeri 4 KBB"
-                date="Juli 2020 - Juli 2023"
-              />
-            </div>
-          </Section>
-          <Section
-            className="bg-card/10 mt-5 sm:px-16"
-            title="Rewards & Sertificates"
-          >
-            <div className="flex flex-col gap-5 mt-4">
-              <ItemCard
-                icon={<GraduationCap />}
-                title="Frontend Dev at Gamelab Indonesia"
-                date="Agustus 2025 - November 2025"
-              />
-            </div>
-          </Section>
+      <Section name="Our work" title="Sellected Work & Project" className="">
+        <div className="grid grid-cols-1 gap-5 mt-10">
+          <ProjectCard
+            image="/landingpage.png"
+            title="Llama Landing Page"
+            description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            previewLink=""
+            githubLink=""
+          />
+          <ProjectCard
+            image="/landingpage.png"
+            title="Llama Landing Page"
+            description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            previewLink=""
+            githubLink=""
+          />
         </div>
-        <Section className="mt-16 sm:px-16" title="My Projects">
-          <div className="grid grid-cols-1 gap-5 mt-7 sm:grid-cols-2 md:grid-cols-3">
-            <ProjectCard
-              image="/landingpage.png"
-              title="Llama Network Landing Page"
-              description="Landing page created with Astro JS."
-              previewLink="#"
-              githubLink="#"
-            />
+      </Section>
+      <Section name="About Me" title="Let's, Get to Know Me" className="mt-10">
+        <div className="mt-10">
+          <div className="flex flex-col gap-8">
+            <img src="/84898.jpg" alt="" className="rounded-3xl" />
+            <div>
+              <h3 className="text-2xl font-semibold">Call me Abiasa</h3>
+              <p className="text-sm text-black/80 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p className="text-sm text-black/80 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
-        </Section>
-      </div>
+        </div>
+      </Section>
       <Footer />
     </>
   );
