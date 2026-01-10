@@ -5,7 +5,7 @@ import Social from "@/components/customs/social";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 w-full py-16 p-5 border-t border-border sm:px-16">
+    <footer className="bg-neutral-900 w-full py-16 p-5 border-t border-border sm:px-16 md:px-26 lg:px-50 xl:px-70">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col justify-center items-center gap-7">
           <h4 className="text-2xl font-bold text-white tracking-tight text-center">

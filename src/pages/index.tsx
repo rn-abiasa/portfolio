@@ -11,11 +11,11 @@ const IndexPage = () => {
   return (
     <>
       <Navbar />
-      <main className="p-5 py-10 sm:px-16">
-        <div>
-          <Badge variant="outline">Fullstack web developer</Badge>
-          <div className="mt-5">
-            <h1 className="text-3xl font-semibold">
+      <main className="p-5 py-10 sm:px-16 md:px-26 lg:px-50 xl:px-70">
+        <div className="sm:flex sm:gap-5 md:justify-between">
+          <div className="">
+            <Badge variant="outline">Fullstack web developer</Badge>
+            <h1 className="text-3xl font-semibold mt-5">
               Hi there, I'm Rehan Abhiassa 👋🏻
             </h1>
             <p className="text-lg mt-5">
@@ -37,11 +37,19 @@ const IndexPage = () => {
               </Button>
             </div>
           </div>
-          <img src="/Abiasa-profile.png" alt="" className="rounded-2xl mt-12" />
+          <img
+            src="/Abiasa-profile.png"
+            alt=""
+            className="rounded-2xl mt-12 sm:mt-0 sm:h-70 md:h-90"
+          />
         </div>
       </main>
-      <Section name="Our work" title="Sellected Work & Projects" className="">
-        <div className="grid grid-cols-1 gap-10 mt-12">
+      <Section
+        name="Our work"
+        title="Sellected Work & Projects"
+        className="sm:px-16 md:px-26 lg:px-50 xl:px-70"
+      >
+        <div className="grid grid-cols-1 gap-10 mt-12 sm:grid-cols-2 md:grid-cols-3">
           <ProjectCard
             image="/landingpage.png"
             title="Llama Landing Page"
@@ -61,10 +69,10 @@ const IndexPage = () => {
       <Section
         name="About Me"
         title="Let's, Get to Know Me"
-        className="mt-10 mb-16"
+        className="mt-10 mb-16 sm:px-16 md:px-26 lg:px-50 xl:px-70"
       >
         <div className="mt-12">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 sm:flex-row sm:justify-center sm:gap-10 md:gap-20">
             <div className="relative flex">
               <img
                 src="/84898.jpg"
@@ -77,7 +85,7 @@ const IndexPage = () => {
                 className="border-7 border-secondary h-40 w-40 rounded-3xl rotate-10"
               />
             </div>
-            <div className="mt-5">
+            <div className="mt-5 sm:w-70 md:w-80">
               <h3 className="text-2xl font-semibold">Call me Abiasa 👋🏻</h3>
               <p className="text-sm text-black/80 mt-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
@@ -89,7 +97,7 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 sm:mt-16 sm:flex sm:gap-10 md:gap-20">
             <div>
               <h3 className="text-lg font-semibold">Experience</h3>
               <div className="grid grid-cols-1 gap-5">
@@ -110,7 +118,7 @@ const IndexPage = () => {
                 />
               </div>
             </div>
-            <div className="mt-12">
+            <div className="mt-12 sm:mt-0">
               <h3 className="text-lg font-semibold">
                 Achivements & Sertificates
               </h3>
