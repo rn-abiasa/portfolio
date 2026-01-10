@@ -16,7 +16,7 @@ const IndexPage = () => {
           <Badge variant="outline">Fullstack web developer</Badge>
           <div className="mt-5">
             <h1 className="text-3xl font-semibold">
-              Hi there, I'm Rehan Abhiassa
+              Hi there, I'm Rehan Abhiassa 👋🏻
             </h1>
             <p className="text-lg mt-5">
               I'm a web developer based in Bandung, Indonesia.
@@ -46,13 +46,15 @@ const IndexPage = () => {
             image="/landingpage.png"
             title="Llama Landing Page"
             description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            previewLink=""
+            date="2025"
+            previewLink="https://llamanetwork.netlify.app"
           />
           <ProjectCard
-            image="/landingpage.png"
-            title="Llama Landing Page"
+            image="/image1.jpeg"
+            title="E-Commerce Website"
             description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            previewLink=""
+            date="2024"
+            previewLink="https://dreamour.vercel.app"
           />
         </div>
       </Section>
@@ -67,16 +69,16 @@ const IndexPage = () => {
               <img
                 src="/84898.jpg"
                 alt=""
-                className="border-7 border-gray-200 h-40 w-40 rounded-3xl -rotate-10"
+                className="border-7 border-secondary h-40 w-40 rounded-3xl -rotate-10"
               />
               <img
                 src="/84898.jpg"
                 alt=""
-                className="border-7 border-gray-200 h-40 w-40 rounded-3xl rotate-10"
+                className="border-7 border-secondary h-40 w-40 rounded-3xl rotate-10"
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-2xl font-semibold">Call me Abiasa</h3>
+              <h3 className="text-2xl font-semibold">Call me Abiasa 👋🏻</h3>
               <p className="text-sm text-black/80 mt-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
                 ipsum dolor sit amet, consectetur adipiscing elit.
@@ -103,8 +105,8 @@ const IndexPage = () => {
                 />
                 <ItemCard
                   icon={<GraduationCap />}
-                  title="Frontend dev at Gamelab Indonesia"
-                  date="04 Agustus, 2025 - 21 November 2025"
+                  title="Student at MTS Negeri 4 KBB"
+                  date="04 Juli, 2020 - 21 Juli 2023"
                 />
               </div>
             </div>

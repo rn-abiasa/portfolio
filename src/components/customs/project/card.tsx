@@ -9,10 +9,17 @@ interface Props {
   image: string;
   title: string;
   description: string;
+  date: string;
   previewLink: string;
 }
 
-const ProjectCard = ({ image, title, description, previewLink }: Props) => {
+const ProjectCard = ({
+  image,
+  title,
+  description,
+  date,
+  previewLink,
+}: Props) => {
   return (
     <>
       <Card className="bg-input/20 py-3">
@@ -23,7 +30,7 @@ const ProjectCard = ({ image, title, description, previewLink }: Props) => {
             </Badge>
             <div className="flex items-center gap-2">
               <Badge variant="outline" className="py-2 px-3">
-                2026
+                {date}
               </Badge>
               <Button
                 variant="outline"

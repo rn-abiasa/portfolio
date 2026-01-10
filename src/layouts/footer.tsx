@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-neutral-900 w-full py-16 p-5 border-t border-border sm:px-16">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col justify-center items-center gap-7">
-          <h4 className="text-3xl font-bold text-white tracking-tight text-center">
+          <h4 className="text-2xl font-bold text-white tracking-tight text-center">
             Let me know if you have project questions or opportunities to
             collaborate
           </h4>
