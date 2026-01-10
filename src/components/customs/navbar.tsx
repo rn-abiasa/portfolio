@@ -11,7 +11,7 @@ import { Github } from "lucide-react";
 const Navbar = () => {
   return (
     <>
-      <div className="sticky top-0 bg-card p-5 sm:px-16">
+      <div className="sticky top-0 z-10 bg-card p-5 sm:px-16">
         <div className="flex justify-between items-center">
           <div>
             <a href="/" className="text-xl font-semibold">
