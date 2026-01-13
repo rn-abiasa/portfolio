@@ -13,7 +13,7 @@ const Footer = () => {
             collaborate
           </h4>
           <Button className="bg-white text-black rounded-full" asChild>
-            <a href="">
+            <a href="mailto:rnabiasa@gmail.com">
               Get in touch
               <MoveUpRight size={16} />
             </a>

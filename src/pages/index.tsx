@@ -15,25 +15,25 @@ const IndexPage = () => {
         <div className="sm:flex sm:gap-5 md:justify-between">
           <div className="">
             <Badge variant="outline">Fullstack web developer</Badge>
-            <h1 className="text-3xl font-semibold mt-5">
+            <h1 className="text-4xl font-semibold mt-5">
               Hi there, I'm Rehan Abhiassa 👋🏻
             </h1>
             <p className="text-lg mt-5">
               I'm a web developer based in Bandung, Indonesia.
             </p>
             <p className="text-sm mt-5">
-              I'm a web developer based in Bandung, Indonesia.
+              Coding is not just a job, it is my hobby.
             </p>
             <div className="flex gap-5 mt-8">
               <Button className="font-semibold rounded-full" asChild>
-                <a href="">Talk with me</a>
+                <a href="mailto:rnabiasa@gmail.com">Talk with me</a>
               </Button>
               <Button
                 variant="outline"
                 className="font-semibold rounded-full"
                 asChild
               >
-                <a href="">See my projects</a>
+                <a href="#project">See my projects</a>
               </Button>
             </div>
           </div>
@@ -45,28 +45,30 @@ const IndexPage = () => {
         </div>
       </main>
       <Section
+        id="project"
         name="Our work"
         title="Sellected Work & Projects"
         className="sm:px-16 md:px-26 lg:px-50 xl:px-70"
       >
         <div className="grid grid-cols-1 gap-10 mt-12 sm:grid-cols-2 md:grid-cols-3">
           <ProjectCard
-            image="/landingpage.png"
-            title="Llama Landing Page"
-            description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            date="2025"
-            previewLink="https://llamanetwork.netlify.app"
+            image="/accommodation.png"
+            title="Accommodation Landing Page"
+            description="Build with React, TailwindCSS, and ShadcnUI"
+            date="New"
+            previewLink="https://accommodation-web.vercel.app"
           />
           <ProjectCard
-            image="/image1.jpeg"
-            title="E-Commerce Website"
-            description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            date="2024"
-            previewLink="https://dreamour.vercel.app"
+            image="/landingpage.png"
+            title="Llama Landing Page"
+            description="Build with Astro JS, and TailwindCSS"
+            date="2025"
+            previewLink="https://llamanetwork.netlify.app"
           />
         </div>
       </Section>
       <Section
+        id=""
         name="About Me"
         title="Let's, Get to Know Me"
         className="mt-10 mb-16 sm:px-16 md:px-26 lg:px-50 xl:px-70"
@@ -88,12 +90,12 @@ const IndexPage = () => {
             <div className="mt-5 sm:w-70 md:w-80">
               <h3 className="text-2xl font-semibold">Call me Abiasa 👋🏻</h3>
               <p className="text-sm text-black/80 mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+                I was born in Bandung, Indonesia. I have been interested in
+                website development since I was in junior high school. I learned
+                to develop websites autodadactically.
               </p>
               <p className="text-sm text-black/80 mt-7">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+                - I like to explore new things.
               </p>
             </div>
           </div>
@@ -108,8 +110,8 @@ const IndexPage = () => {
                 />
                 <ItemCard
                   icon={<GraduationCap />}
-                  title="Student dev at SMK Negeri 1 Cipeundeuy"
-                  date="current"
+                  title="Student at SMK Negeri 1 Cipeundeuy"
+                  date="Current"
                 />
                 <ItemCard
                   icon={<GraduationCap />}
