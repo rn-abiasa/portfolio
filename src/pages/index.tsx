@@ -1,6 +1,9 @@
+import { useState, useEffect } from "react";
+
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { GraduationCap } from "lucide-react";
+import { getProjects } from "../services/project.services";
 import Navbar from "../components/customs/navbar";
 import Section from "../layouts/section";
 import ItemCard from "../components/customs/item/card";
@@ -8,6 +11,13 @@ import ProjectCard from "../components/customs/project/card";
 import Footer from "../layouts/footer";
 
 const IndexPage = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    getProjects((data: any) => {
+      setProjects(data);
+    });
+  }, []);
   return (
     <>
       <Navbar />
@@ -51,20 +61,16 @@ const IndexPage = () => {
         className="sm:px-16 md:px-26 lg:px-50 xl:px-70"
       >
         <div className="grid grid-cols-1 gap-10 mt-12 sm:grid-cols-2 md:grid-cols-3">
-          <ProjectCard
-            image="/accommodation.png"
-            title="Accommodation Landing Page"
-            description="Build with React, TailwindCSS, and ShadcnUI"
-            date="New"
-            previewLink="https://accommodation-web.vercel.app"
-          />
-          <ProjectCard
-            image="/landingpage.png"
-            title="Llama Landing Page"
-            description="Build with Astro JS, and TailwindCSS"
-            date="2025"
-            previewLink="https://llamanetwork.netlify.app"
-          />
+          {projects.map((project: any) => (
+            <ProjectCard
+              key={project.Name}
+              image={project.Image[0].url}
+              title={project.Name}
+              description={project.Description}
+              date={project.Date}
+              previewLink={project.Url}
+            />
+          ))}
         </div>
       </Section>
       <Section
